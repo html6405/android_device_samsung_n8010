@@ -1,3 +1,11 @@
-# android_device_samsung_n8010
-Device tree for the Samsung Galaxy Note 10.1 GT-N8010 wifi version (it's equal to the N8013),
+Device configuration for the Samsung Galaxy Note 10.1 (Wifi)
 
+p4notewifi a.k.a GT-N8010/GT-N8013
+
+Copyright (C) 2012 The CyanogenMod Project
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
