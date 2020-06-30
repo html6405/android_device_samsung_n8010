@@ -9,11 +9,11 @@ $(call inherit-product, device/samsung/n8010/n8010.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 # Inherit some common stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/slim/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := n8010
-PRODUCT_NAME := lineage_n8010
+PRODUCT_NAME := slim_n8010
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := GT-N8010
 PRODUCT_MANUFACTURER := samsung

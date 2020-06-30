@@ -1,0 +1,22 @@
+[
+    {
+        "repository": "SlimRoms/android_device_samsung_smdk4412-common",
+        "target_path": "device/samsung/smdk4412-common"
+    },
+    {
+        "repository": "SlimRoms/android_kernel_samsung_smdk4412",
+        "target_path": "kernel/samsung/smdk4412"
+    },
+    {
+        "repository": "SlimRoms/android_device_samsung_n80xx-common",
+        "target_path": "device/samsung/n80xx-common"
+    },
+    {
+        "repository": "SlimRoms/android_packages_apps_SamsungServiceMode",
+        "target_path": "packages/apps/SamsungServiceMode"
+    },
+    {
+        "repository": "SlimRoms/android_hardware_samsung",
+        "target_path": "hardware/samsung"
+    }
+]
