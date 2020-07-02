@@ -19,7 +19,7 @@
 
 # Inline kernel building
 TARGET_KERNEL_CONFIG := lineageos_n8013_defconfig
-
+TARGET_BUILD_VARIANT:=user
 N8010 := true
 
 WITHOUT_RIL := true
