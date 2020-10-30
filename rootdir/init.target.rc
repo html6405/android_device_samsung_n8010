@@ -107,7 +107,8 @@ service gps-daemon /system/bin/sh /system/vendor/bin/gps_daemon.sh
     seclabel u:r:glgps:s0
 
 # TVout
-#service TvoutService_C /system/bin/bintvoutservice
+#service TvoutService_C /system/vendor/bin/bintvoutservice
 #     class main
 #     user system
 #     group graphics
+#     seclabel u:r:SecTVOut:s0
