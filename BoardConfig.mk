@@ -17,6 +17,8 @@
 # Include n80xx BoardConfigCommon
 -include device/samsung/n80xx-common/BoardConfigCommon.mk
 
+TARGET_BUILD_VARIANT:=user
+
 # Inline kernel building
 TARGET_KERNEL_CONFIG := lineageos_n8013_defconfig
 
