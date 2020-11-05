@@ -8,8 +8,8 @@
         "target_path": "kernel/samsung/smdk4412"
     },
     {
-        "repository": "android_device_samsung_n80xx",
-        "target_path": "device/samsung/n80xx"
+        "repository": "android_device_samsung_n80xx-common",
+        "target_path": "device/samsung/n80xx-common"
     },
     {
         "repository": "android_packages_apps_SamsungServiceMode",
