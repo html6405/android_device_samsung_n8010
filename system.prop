@@ -2,8 +2,6 @@
 # system.prop for n801x
 #
 config.disable_atlas=true
-dalvik.vm.dexopt-data-only=1
-dalvik.vm.dex2oat-Xmx=256m
 ro.hdcp2.rx=tz
 ro.lcd_min_brightness=20
 ro.sf.lcd_density=160
@@ -39,9 +37,6 @@ persist.sys.purgeable_assets=1
 
 # Better RAM management
 ro.HOME_APP_ADJ=1
-
-# Low memory device
-ro.config.low_ram=true
 
 # Force high-end graphics in low ram mode
 persist.sys.force_highendgfx=true

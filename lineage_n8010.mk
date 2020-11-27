@@ -2,9 +2,9 @@
 PRODUCT_RELEASE_NAME := n8010
 
 # Inherit device configuration
-$(call inherit-product, device/samsung/n8010/n8010.mk)
-$(call inherit-product, device/samsung/n80xx-common/n80xx-common.mk)
 $(call inherit-product, device/samsung/smdk4412-common/common.mk)
+$(call inherit-product, device/samsung/n80xx-common/n80xx-common.mk)
+$(call inherit-product, device/samsung/n8010/n8010.mk)
 
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
