@@ -9,7 +9,7 @@ $(call inherit-product, device/samsung/n8010/n8010.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 # Inherit some common stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/cm/config/common_full_tablet_wifionly.mk)
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1024
