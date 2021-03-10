@@ -26,3 +26,6 @@ WITHOUT_RIL := true
 
 # assert
 TARGET_OTA_ASSERT_DEVICE := c0,p4notewifi,p4notewifiww,n8013,GT-N8013,n8010,GT-N8010
+
+# SELinux
+BOARD_SEPOLICY_DIRS += device/samsung/smdk4412-common/selinux
