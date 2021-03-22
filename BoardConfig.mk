@@ -28,5 +28,6 @@ WITHOUT_RIL := true
 TARGET_OTA_ASSERT_DEVICE := c0,p4notewifi,p4notewifiww,n8013,GT-N8013,n8010,GT-N8010
 
 # Selinux
-BOARD_SEPOLICY_DIRS += \
-    device/samsung/smdk4412-common/selinux
+BOARD_SEPOLICY_DIRS += device/samsung/n80xx-common/selinux/vendor
+BOARD_PLAT_PUBLIC_SEPOLICY_DIR += device/samsung/n80xx-common/selinux/public
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += device/samsung/n80xx-common/selinux/private
