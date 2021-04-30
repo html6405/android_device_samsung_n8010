@@ -16,3 +16,7 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/lineage_n8010.mk
+
+COMMON_LUNCH_CHOICES := \
+    lineage_n8010-userdebug \
+    lineage_n8010-eng
