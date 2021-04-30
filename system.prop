@@ -1,7 +1,6 @@
 #
 # system.prop for n801x
 #
-config.disable_atlas=true
 dalvik.vm.dexopt-data-only=1
 dalvik.vm.dex2oat-Xmx=256m
 ro.hdcp2.rx=tz
