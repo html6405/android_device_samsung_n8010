@@ -1,7 +1,7 @@
 import /init.target.usb.rc
 
 on init
-    export LD_SHIM_LIBS /system/lib/libsec-ril.so|libsamsung_symbols.so
+    export LD_SHIM_LIBS /vendor/lib/libsec-ril.so|libsamsung_symbols.so
 
     chown system system /sys/devices/system/cpu/cpufreq/pegasusq
     chown system system /sys/devices/system/cpu/cpufreq/pegasusq/boost_freq
@@ -118,7 +118,7 @@ on boot
     setprop ro.radio.noril yes
 
 # serial keyboard daemon
-service sec_keyboard /system/vendor/bin/sec_keyboard /dev/ttySAC2
+service sec_keyboard /vendor/bin/sec_keyboard /dev/ttySAC2
 	class core
 	group system
 	seclabel u:r:sec_keyboard:s0
