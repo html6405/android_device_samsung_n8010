@@ -64,7 +64,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.HOME_APP_ADJ=1
 
 # Low RAM mode
-PRODUCT_PROPERTY_OVERRIDES += \
+#PRODUCT_PROPERTY_OVERRIDES += \
 	ro.config.low_ram=false
 
 # Force high-end graphics in low ram mode
@@ -84,5 +84,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.ril.def.agps.mode=1
 
 # Wifi
-PRODUCT_PROPERTY_OVERRIDES += \
+#PRODUCT_PROPERTY_OVERRIDES += \
 	wifi.supplicant_scan_interval=240
