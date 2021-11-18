@@ -64,7 +64,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.HOME_APP_ADJ=1
 
 # Low RAM mode
-#PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_PROPERTY_OVERRIDES += \
 	ro.config.low_ram=false
 
 # Force high-end graphics in low ram mode
@@ -76,7 +76,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.sys.fw.bg_apps_limit=16
 
 # Set max background services
-PRODUCT_PROPERTY_OVERRIDES += \
+# PRODUCT_PROPERTY_OVERRIDES += \
 	ro.config.max_starting_bg=4
 
 # GPS
