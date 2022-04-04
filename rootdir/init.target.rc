@@ -117,7 +117,6 @@ on boot
 service vendor.sec_keyboard /vendor/bin/sec_keyboard /dev/ttySAC2
 	class core
 	group system
-	disabled
 	seclabel u:r:sec_keyboard:s0
 
 # Start GPS daemon
