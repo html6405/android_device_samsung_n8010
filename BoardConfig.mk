@@ -18,7 +18,7 @@
 -include device/samsung/n80xx-common/BoardConfigCommon.mk
 
 # Inline kernel building
-TARGET_KERNEL_CONFIG := lineageos_n8013_defconfig
+TARGET_KERNEL_CONFIG := lineageos_n8000_defconfig
 
 N8010 := true
 
