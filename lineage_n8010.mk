@@ -7,7 +7,7 @@ $(call inherit-product, device/samsung/n80xx-common/n80xx-common.mk)
 $(call inherit-product, device/samsung/smdk4412-common/common.mk)
 
 # Inherit from the common Open Source product configuration
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1024
