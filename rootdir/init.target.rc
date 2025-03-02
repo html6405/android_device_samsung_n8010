@@ -110,8 +110,6 @@ on property:init.svc.macloader=stopped
     chmod 0666 /data/.rev
 
 on boot
-# cbd
-    setprop ro.radio.noril yes
 
 # serial keyboard daemon
 service vendor.sec_keyboard /vendor/bin/sec_keyboard /dev/ttySAC2
