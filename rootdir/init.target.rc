@@ -2,8 +2,6 @@ import /vendor/etc/init/hw/init.target.usb.rc
 import /vendor/etc/init/hw/init.n80xx.rc
 
 on init
-    export LD_SHIM_LIBS /vendor/lib/libsec-ril.so|libsamsung_symbols.so
-
     chown system system /sys/devices/system/cpu/cpufreq/pegasusq
     chown system system /sys/devices/system/cpu/cpufreq/pegasusq/boost_freq
     chown system system /sys/devices/system/cpu/cpufreq/pegasusq/boost_lock_time
@@ -57,8 +55,6 @@ on property:sys.boot_completed=1
     # increase read-ahead value to 256 kb
     write /sys/block/mmcblk0/queue/read_ahead_kb 256
 
-    stop vendor.ril-daemon
-
 on post-fs-data
 
 # serial keyboard port
@@ -90,11 +86,14 @@ on post-fs-data
     write /sys/class/sec/gps/GPS_PWR_EN/direction out
     chown gps system /sys/class/sec/gps/GPS_PWR_EN/value
     chmod 0664 /sys/class/sec/gps/GPS_PWR_EN/value
+    chown gps system /sys/class/sec/gps/GPS_nRST/value
+    chmod 0664 /sys/class/sec/gps/GPS_nRST/value
     chown gps system /dev/ttySAC1
     chmod 0660 /dev/ttySAC1
     restorecon /sys/class/sec/gps/export
     restorecon /sys/class/sec/gps/GPS_PWR_EN/value
     restorecon /sys/class/sec/gps/GPS_PWR_EN/direction
+    restorecon /sys/class/sec/gps/GPS_nRST/value
 
 # Restorecon
     restorecon_recursive /efs

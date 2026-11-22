@@ -17,8 +17,11 @@
 # Include n80xx BoardConfigCommon
 -include device/samsung/n80xx-common/BoardConfigCommon.mk
 
+# 2 GiB SYSTEM with the inspected N8010 layout: CACHE keeps 704.99609375 MiB.
+BOARD_CACHEIMAGE_PARTITION_SIZE := 739241984
+
 # Inline kernel building
-TARGET_KERNEL_CONFIG := lineageos_n8000_defconfig
+TARGET_KERNEL_CONFIG := lineageos_n8010_defconfig
 
 N8010 := true
 

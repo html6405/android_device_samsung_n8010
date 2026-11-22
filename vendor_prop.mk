@@ -15,26 +15,26 @@
 #
 
 #
-# system.prop for n801x
+# system.prop for n8010
 #
+# Display
 PRODUCT_PROPERTY_OVERRIDES += \
-	config.disable_atlas=true \
+    ro.vendor.exynos4.refresh_rate_millihz=60000 \
+    ro.surface_flinger.enable_frame_rate_override=false
+
+PRODUCT_PROPERTY_OVERRIDES += \
 	dalvik.vm.dexopt-data-only=1 \
 	dalvik.vm.dex2oat-Xmx=256m \
 	ro.sf.lcd_density=160 \
-	ro.lcd_min_brightness=20 \
-	ro.ril.telephony.nstrings=4
+	ro.lcd_min_brightness=20
 
 # EGL blobs crash on screen off
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.egl.destroy_after_detach=true
 
-# Camera API
-PRODUCT_PROPERTY_OVERRIDES += \
-	persist.camera.HAL3.enabled=1
-
 # RAM optimizations
 PRODUCT_PROPERTY_OVERRIDES += \
+	config.disable_atlas=true \
 	ro.sys.fw.trim_enable_memory=805306368 \
 	ro.sys.fw.use_trim_settings=true \
 	ro.sys.fw.empty_app_percent=25 \
@@ -62,14 +62,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.HOME_APP_ADJ=1
 
-# Low RAM mode
-PRODUCT_PROPERTY_OVERRIDES += \
-	ro.config.low_ram=false
-
-# Force high-end graphics in low ram mode
-PRODUCT_PROPERTY_OVERRIDES += \
-	persist.sys.force_highendgfx=true
-
 # Reduce background apps limit to 16 on low-tier devices
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.sys.fw.bg_apps_limit=16
@@ -78,10 +70,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # PRODUCT_PROPERTY_OVERRIDES += \
 	ro.config.max_starting_bg=4
 
-# GPS
-PRODUCT_PROPERTY_OVERRIDES += \
-	ro.ril.def.agps.mode=1
+# Wi-Fi-only device: disable the telephony stack even without bootloader detection.
+PRODUCT_VENDOR_PROPERTIES += ro.radio.noril=yes
 
 # Wifi
-#PRODUCT_PROPERTY_OVERRIDES += \
+# PRODUCT_PROPERTY_OVERRIDES += \
 	wifi.supplicant_scan_interval=240

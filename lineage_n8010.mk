@@ -23,10 +23,9 @@ PRODUCT_BRAND := samsung
 PRODUCT_MODEL := GT-N8010
 PRODUCT_MANUFACTURER := samsung
 
-# Set build fingerprint / ID / Product Name ect.
+# Set build identity using the current product override keys.
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    	PRODUCT_NAME=p4notewifiue \
-		TARGET_DEVICE=p4notewifi \
-		PRIVATE_BUILD_DESC="p4notewifixx-user 4.4.2 KOT49H N8010XXUDNE4 release-keys"
-
-BUILD_FINGERPRINT := samsung/p4notewifixx/p4notewifiww:4.4.2/KOT49H/N8010XXUDNE4:user/release-keys
+    BuildDesc="p4notewifixx-user 4.4.2 KOT49H N8010XXUDNE4 release-keys" \
+    BuildFingerprint=samsung/p4notewifixx/p4notewifiww:4.4.2/KOT49H/N8010XXUDNE4:user/release-keys \
+    DeviceName=p4notewifi \
+    DeviceProduct=p4notewifiue
