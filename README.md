@@ -90,7 +90,8 @@ N8010 manager recognition, normal-app root grant and grant persistence have not 
 The final package retains exactly the installed firmware images and incremental
 `1795348601`. Only the OTA backup script was corrected, then the package was
 regenerated and signed through the standard metadata/signing flow. Original and
-final payloads are byte-identical. Two successive OTA updates and addon survival
-have not yet been validated. Vanilla includes neither GApps nor microG. Limited
-user reports of separately installed microG working with YouTube/Maps do not
-establish complete compatibility or OTA persistence.
+final payloads are byte-identical. Vanilla includes neither GApps nor microG. The separately published
+[optional microG Recovery installer](https://github.com/html6405/exynos4-microg-installer/releases/tag/v0.1.0-rc1)
+passed clean installation and two TWRP installations of this same Vanilla ROM
+on GT-N8010. The microG payload and checked permissions persisted in both
+cycles. GT-N8013, cross-version updates and Minimal-GApps remain untested.
