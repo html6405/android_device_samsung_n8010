@@ -1,6 +1,6 @@
-# Samsung Galaxy Note 10.1 Wi-Fi — GT-N8010
+# Samsung Galaxy Note 10.1 Wi-Fi — GT-N8010 / GT-N8013
 
-Device configuration for unofficial LineageOS 23.2 / Android 16.
+Shared device configuration for unofficial LineageOS 23.2 / Android 16. N8010 and N8013 use the same `n8010` tree and ROM; no separate N8013 download is required. Physical tests documented here were performed on the available N8010.
 The [2026-11-22 experimental Enforcing release](https://github.com/html6405/android_device_samsung_n8010/releases/tag/lineage-23.2-20261122) has passed package verification, installation and bounded runtime tests documented below. N8000 hardware results do not establish N8010 compatibility.
 
 ## Build
@@ -46,7 +46,7 @@ This configuration expects 2 GiB SYSTEM and 739241984 bytes CACHE
 (about 705 MiB), preserving the previously inspected N8010 layout. It is different
 from the current N8000 CACHE layout. The ROM does not repartition the device.
 Verify the actual target partition layout and compatible recovery before flashing.
-The existing N8013 OTA aliases do not establish validation of that model/layout.
+N8013 is included in the shared ROM aliases. Check the actual partition layout on either model; the physical test unit was N8010.
 
 The current candidate passed ZIP/payload integrity, merged VINTF compatibility,
 Wi-Fi-only package checks and packed-kernel/config verification. It contains an

@@ -1,4 +1,4 @@
-# GT-N8010 changelog
+# GT-N8010 / GT-N8013 changelog
 
 ## 2026-11-22 — LineageOS 23.2 experimental
 
