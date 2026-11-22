@@ -32,6 +32,16 @@ The older `lineageos.dependencies` is retained for existing tooling.
 
 ## Partition layout and first validation
 
+**A prepared 2 GiB SYSTEM partition is required before installing this ROM.**
+For the separate partitioning step, see
+[N80xx repartition releases](https://github.com/html6405/n80xx-repartition/releases)
+and its [model-specific device support](https://github.com/html6405/n80xx-repartition#device-support).
+Use only the checked N8010 profile; the project currently marks that profile
+experimental. Do not apply N8000 partition boundaries to N8010. If the device
+already has the required layout, do not repartition it again. Repartitioning
+creates a fresh System and requires the project's verified backups; the ROM ZIP
+itself never changes partition boundaries.
+
 This configuration expects 2 GiB SYSTEM and 739241984 bytes CACHE
 (about 705 MiB), preserving the previously inspected N8010 layout. It is different
 from the current N8000 CACHE layout. The ROM does not repartition the device.
