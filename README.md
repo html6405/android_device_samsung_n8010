@@ -1,5 +1,7 @@
 # Samsung Galaxy Note 10.1 Wi-Fi — GT-N8010 / GT-N8013
 
+[November 24 VFP kernel preview](https://github.com/html6405/android_device_samsung_n8010/releases/tag/lineage-23.2-20261124-vfp-preview) for GT-N8010 / GT-N8013. Install manually using the release instructions.
+
 Shared device configuration for unofficial LineageOS 23.2 / Android 16. N8010 and N8013 use the same `n8010` tree and ROM; no separate N8013 download is required. Physical tests documented here were performed on the available N8010.
 The [2026-11-22 experimental Enforcing release](https://github.com/html6405/android_device_samsung_n8010/releases/tag/lineage-23.2-20261122) has passed package verification, installation and bounded runtime tests documented below. N8000 hardware results do not establish N8010 compatibility.
 
@@ -95,3 +97,7 @@ final payloads are byte-identical. Vanilla includes neither GApps nor microG. Th
 passed clean installation and two TWRP installations of this same Vanilla ROM
 on GT-N8010. The microG payload and checked permissions persisted in both
 cycles. GT-N8013, cross-version updates and Minimal-GApps remain untested.
+
+**Recommended add-on for daily use: [microG with Companion](https://github.com/html6405/exynos4-microg-installer/releases/tag/v0.1.0-rc1).** This is the variant
+validated above. The [microG with the original Play Store](https://github.com/html6405/exynos4-microg-installer/releases/tag/v0.1.0-phonesky-r7) is experimental and its runtime test
+coverage is limited to GT-N8000.

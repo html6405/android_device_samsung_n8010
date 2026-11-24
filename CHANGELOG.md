@@ -1,5 +1,12 @@
 # GT-N8010 / GT-N8013 changelog
 
+## 2026-11-24 — VFP kernel preview
+
+- Add the upstream ARM VFP hotplug fix to clear the cached hardware owner when a CPU goes offline.
+- The matching Boot-only test completed one long suspend/wake cycle with 12 h 18 min of cumulative suspend, unchanged core process IDs, SELinux Enforcing and an empty crash buffer on the tested hardware.
+- The signed full-ROM preview keeps the November 22 Android build identity. The complete ZIP passed host checks. Device validation used the same kernel installed through Boot only.
+- ROM SHA-256 `197a30164d36ee26648dac447423078549db984851aae894a1c2034a6c56779d`. [Manual preview for GT-N8010 / GT-N8013](https://github.com/html6405/android_device_samsung_n8010/releases/tag/lineage-23.2-20261124-vfp-preview)
+
 ## 2026-11-22 — LineageOS 23.2 experimental
 
 Built and package-verified. TWRP installation and first Enforcing boot passed;
